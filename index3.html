@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>randomness </title>
+</head>
+<body>
+
+<script type="text/javascript">
+function Text2data(){
+    var mydata = document.getElementById('mydata').value;
+    var lnk = document.getElementById('lnk');
+    lnk.href = "https://br53no1o0f.execute-api.eu-west-3.amazonaws.com/default/pritindex?ns=" + mydata;
+   window.location = "https://br53no1o0f.execute-api.eu-west-3.amazonaws.com/default/pritindex?n=" + mydata;
+}
+
+
+</script>
+
+How many values do you want to create between 0 to 9
+
+ <a href="" id=lnk></a> <br>
+<input type='text' id='mydata' value=' ' />
+<input type='button' onclick='Text2data()' value='submit'/>
+
+
+</body>
+</html>
